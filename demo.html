@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="demo/bootstrap.css">
+    <style>
+    html { font-size: 14px; }
+    #title { font-size: 1.3rem; }
+    .page-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem; }
+    html, body, table,p, .page-title{
+      height: 100%;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+    body {
+      display: flex; 
+      flex-direction: column;
+    }
+    td{
+     float:left;
+    }
+    th{
+      width: 0px;
+    }
+    .audio{
+      border-top:solid 1px rgb(223,226,230);
+      background-color: rgb(247,249,250);
+    }
+    </style> 
+    <title>Personalized Music Transfer via Compositional User Preference Transformer on Symbolic Music: Demonstrations</title>
+  </head>
+  
+  <body>
+    <nav class="navbar sticky-top navbar-expand navbar-light bg-light border-bottom">
+      <span id="title">
+        <strong> Personalized Music Transfer via Compositional User Preference Transformer on Symbolic Music:</strong> Demonstrations
+      </span>
+    </nav>
+        <div class="page-title">Figure 8: Transfer based on one piece of the user’s favorite music</div>
+        <p>
+          Fig. 8 demonstrates the example where the transferred music is
+          generated based on one piece of the user’s favorite music and one piece of randomly selected music.
+          The transferred music develops its unique characteristics while effectively inheriting characteristics
+          from the user’s favorite music and the input music. Specifically, the transferred music preserves
+          “rising-falling contour” from the user’s favorite music, which is a unique melody feature of this
+          music. The transferred music also preserves overlapping notes and the 3/4 time signature from the
+          input music by containing the same music structure of each bar. As for the uniqueness, the most
+          noticeable difference is its new melody with a different rhythm pattern, which is emphasized in orange
+          parentheses. For example, the first four notes consist of two quarter notes and two following eighth
+          notes, which conveys a soothing, undulating and romantic feel. The continuous appearance of this
+          pattern reinforces this feeling, thus creating a style that is coherent and naturally different from the
+          two source pieces. Although some melodic features contain in the new melody, the transferred
+          music has developed a completely different “melodic outline”, giving a comfortable and smooth
+          sense of hearing.
+        </p>
+
+        <br>
+        <img src="demo/figure7.png" alt="Figure7" style="margin: 0 auto; max-width:100%; max-height: 50%;" />
+        
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap" scope="row">Favorite Music</th>
+                <td class="small"><audio src="demo/sweet.mp3" controls></audio><br>
+                <strong><i>"Sweet"</i> by Jay Chou</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Randomly Selected Music </th>
+                <td class="small"><audio src="demo/moon_river.mp3" controls></audio><br>
+                  <strong><i>"Moon River"</i> by Audrey Hepburn</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Transferred Music</th>
+                <td class="small"><audio src="demo/transfer_1.mp3" controls></audio><br>
+                  <strong>Transferred</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">The Complete Music Pieces</th>
+                <td class="small"><audio src="demo/sweet_complete.mp3" controls></audio><br>
+                  <i>"Sweet"</i></td>
+                <td class="small"><audio src="demo/sweet_complete_with_acc.mp3" controls></audio><br>
+                    <i>"Sweet"</i> with accompaniment</td>
+                <td class="small"><audio src="demo/moon_river_complete.mp3" controls></audio><br>
+                  <i>"Moon River"</i></td>
+                <td class="small"><audio src="demo/moon_river_complete_with_acc.mp3" controls></audio><br>
+                  <i>"Moon River" </i>with accompaniment</td>
+                <td class="small"><audio src="demo/transfer_1_complete.mp3" controls></audio><br>
+                  The transferred music</td>
+                <td class="small"><audio src="demo/transfer_1_complete_with_acc.mp3" controls></audio><br>
+                  The transferred music with accompaniment</td>
+              </tr>
+            </tbody>
+          </table>
+        
+          <div><hr></div>
+        <div class="page-title">Figure 9: Transfer based on two pieces of the user’s favorite music.</div>
+        <p>
+          Fig. 9 demonstrates the example where the transferred music is
+          generated based on two pieces of the user’s favorite music and one piece of randomly selected music.
+          The transferred music preserves “falling-rising-falling contour” from two pieces of the user’s favorite
+          music, rhythmic patterns and the 4/4 time signature from the input music. However, characteristics
+          from three source pieces are reorganized, fused and subtly integrated into a new melody. Specifically,
+          the “falling-rising-falling” contours from the user’s favorite music are subtly combined into a new
+          wave-like melodic outline, which brings different and complex auditory effects, creating emotional
+          ups and downs.
+        </p>
+        <img src="demo/figure8.png" alt="Figure8" style="margin: 0 auto; max-width:100%; max-height: 65%;" />
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <th class="text-nowrap" scope="row">Favorite Music 1</th>
+              <td class="small"><audio src="demo/east_wind_breaks.mp3" controls></audio><br>
+              <strong><i>"East Wind Breaks"</i> by Jay Chou</strong></td>
+            </tr>
+            <tr>
+              <th class="text-nowrap" scope="row">Favorite Music 2</th>
+              <td class="small"><audio src="demo/sweet.mp3" controls></audio><br>
+              <strong><i>"Sweet"</i> by Jay Chou</strong></td>
+            </tr>
+            <tr>
+              <th class="text-nowrap" scope="row">Randomly Selected Music </th>
+              <td class="small"><audio src="demo/red_sun.mp3" controls></audio><br>
+                <strong><i>"Red Sun"</i> by Hacken Lee</strong></td>
+            </tr>
+            <tr>
+              <th class="text-nowrap" scope="row">Transferred Music</th>
+              <td class="small"><audio src="demo/transfer_2.mp3" controls></audio><br>
+                <strong>Transferred</strong></td>
+            </tr>
+            <tr>
+              <th class="text-nowrap" scope="row">The Complete Music Pieces</th>
+              <td class="small"><audio src="demo/east_wind_breaks_complete.mp3" controls></audio><br>
+                <i>"East Wind Breaks"</i></td>
+              <td class="small"><audio src="demo/east_wind_breaks_complete_with_acc.mp3" controls></audio><br>
+                <i>"East Wind Breaks"</i> with accompaniment</td>
+              <td class="small"><audio src="demo/sweet_complete.mp3" controls></audio><br>
+                <i>"Sweet"</i></td>
+              <td class="small"><audio src="demo/sweet_complete_with_acc.mp3" controls></audio><br>
+                <i>"Sweet"</i> with accompaniment</td>
+              <td class="small"><audio src="demo/red_sun_complete.mp3" controls></audio><br>
+                <i>"Red Sun"</i></td>
+              <td class="small"><audio src="demo/red_sun_complete_with_acc.mp3" controls></audio><br>
+                <i>"Red Sun"</i> with accompaniment</td>
+              <td class="small"><audio src="demo/transfer_2_complete.mp3" controls></audio><br>
+                The transferred music</td>
+              <td class="small"><audio src="demo/transfer_2_complete_with_acc.mp3" controls></audio><br>
+                The transferred music with accompaniment</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div><hr></div>
+        <div class="page-title">Further analysis</div>
+        <p>
+          Based on these examples, we see that the transferred music share similar features with their source
+          pieces in terms of melodic contour, rhythmic pattern and time signature. However, most visible
+          similarities show flexible changes in note-level details such as pitch and duration. In addition, the
+          transferred music develops new features that are not present in the original music, which results in a
+          distinct and novel feeling compared to original music.
+          <br>
+          However, the model also has limitations. If there are more than one piece of favorite music, the
+          model tends to learn common music patterns without distinct difference. For example, in Fig. 9, two
+          pieces of user’s favorite music contain similar ‘’falling-rising-falling” patterns though the absolute
+          pitch value might be different. If the user’s favorite music is diverse, the model tends to “smoothing
+          over” distinct features or learn features from one input. This is because the model tends to learn
+          common features among all music samples and transfer the input music to fit common features. If
+          the difference among the user’s favorite music is too large, the model tends to follow those common
+          features while ignore differences.
+          <br><br><br>
+      </p>
+    </body>
+</html>
